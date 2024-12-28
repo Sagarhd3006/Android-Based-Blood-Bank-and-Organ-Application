@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ABOUT APP"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="@color/purple_200"
+        ></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="A mobile application for blood and organ donation is a transformative tool designed to bridge the gap between donors and recipients, making the process of saving lives more efficient and accessible. This app would allow users to register as blood or organ donors, providing key details such as blood type, health history, and availability. Through real-time matching, the app can connect donors with individuals or medical institutions in urgent need, ensuring that critical supplies reach those who need them most. Features like an eligibility checker, appointment scheduling with nearby donation centers, and reminders for the next donation date simplify the process for users. Additionally, the app would offer educational resources, raising awareness about the importance of donations and sharing inspiring stories of lives changed. With secure data management and multilingual support, the app aims to be inclusive and trustworthy, fostering a community committed to saving lives. This digital platform not only enhances convenience but also builds a network of hope, making the act of donation seamless and impactful."
+        android:textAlignment="gravity"
+        ></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DEVELOPED BY :"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="@color/purple_200"
+        ></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DEVELOPED BY :"
+        android:textStyle="bold"
+        android:textSize="20dp"
+
+        android:textColor="@color/purple_200"
+        ></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DEVELOPED BY :"
+        android:textStyle="bold"
+        android:textSize="20dp"
+
+        android:textColor="@color/purple_200"
+        ></TextView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DEVELOPED BY :"
+        android:textStyle="bold"
+        android:textSize="20dp"
+
+        android:textColor="@color/purple_200"
+        ></TextView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DEVELOPED BY :"
+        android:textStyle="bold"
+        android:textSize="20dp"
+
+        android:textColor="@color/purple_200"
+        ></TextView>
+</LinearLayout>

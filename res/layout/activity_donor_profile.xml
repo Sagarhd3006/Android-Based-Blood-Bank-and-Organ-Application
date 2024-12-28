@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:id="@+id/toolbar"
+                android:elevation="4dp"
+                android:background="@color/purple_200"
+                app:titleTextAppearance="@string/app_name"
+                app:titleTextColor="@color/black"
+                />
+
+
+
+            <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- Donor Name -->
+                    <EditText
+                        android:id="@+id/et_donor_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:hint="Full Name"
+                        android:inputType="textPersonName" />
+
+                    <!-- Donor Age -->
+                    <EditText
+                        android:id="@+id/et_donor_age"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:hint="Age"
+                        android:maxLength="3"
+                        android:inputType="number" />
+
+                    <!-- Mobile Number -->
+                    <EditText
+                        android:id="@+id/et_donor_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:hint="Mobile Number"
+                        android:maxLength="10"
+                        android:inputType="phone" />
+
+                    <!-- Email -->
+                    <EditText
+                        android:id="@+id/et_donor_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress" />
+
+                    <!-- Blood Group -->
+
+
+
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:id="@+id/spinner_blood_group"
+                        android:entries="@array/blood_group_labels"
+                        android:spinnerMode="dropdown"
+                        android:padding="8dp"
+                        />
+
+                    <!-- Organs to Donate -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Organs to Donate"
+                        android:textStyle="bold" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_heart"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:text="Heart" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_lungs"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:text="Lungs" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_kidneys"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:text="Kidneys" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_liver"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:text="Liver" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_eyes"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:text="Eyes" />
+
+                    <!-- Consent -->
+                    <CheckBox
+                        android:id="@+id/checkbox_consent"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:text="I consent to donate my blood and/or organs." />
+
+                    <!-- Submit Button -->
+                    <Button
+                        android:id="@+id/btn_submit_donor_form"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:background="@color/purple_200"
+                        android:layout_margin="20dp"
+                        android:text="Submit" />
+
+                </LinearLayout>
+            </ScrollView>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/nav_view"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/nav_header"
+        app:itemIconTint="@color/purple_200"
+        app:itemTextColor="@color/black"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>
